@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vUf-SM-MA0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="m6y-wb-wrD">
+            <objects>
+                <tabBarController id="vUf-SM-MA0" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="yjs-Dq-R8E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DDq-1S-GMj" kind="relationship" relationship="viewControllers" id="uwr-qN-cpM"/>
+                        <segue destination="H6C-qJ-kEx" kind="relationship" relationship="viewControllers" id="YhH-0R-q7p"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCW-Qz-34C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="-913"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="SeU-hN-6Nq">
+            <objects>
+                <viewController id="DDq-1S-GMj" customClass="ViewController" customModule="Emoticon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fH6-dZ-ncf"/>
+                        <viewControllerLayoutGuide type="bottom" id="8T8-Z5-TXW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LYU-cz-6Q8" customClass="Triangle" customModule="Emoticon" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="SxK-gc-FAT"/>
+                    <connections>
+                        <outlet property="triangle" destination="LYU-cz-6Q8" id="pwX-qd-pPM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HKh-DT-Qi4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="-457"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="WYS-zf-T12">
+            <objects>
+                <viewController id="H6C-qJ-kEx" customClass="ViewController" customModule="Emoticon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cvY-mu-jCl"/>
+                        <viewControllerLayoutGuide type="bottom" id="cVo-NL-zXu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2hH-cQ-Q09" customClass="FaceView" customModule="Emoticon" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6tF-vi-nkr">
+                                <rect key="frame" x="88" y="543" width="216" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SXM-Pj-Rn8">
+                                <rect key="frame" x="163" y="36" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeEyes:" destination="H6C-qJ-kEx" eventType="valueChanged" id="zOb-W3-bXz"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="mouthCurvature">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="scale">
+                                <real key="value" value="79"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="2pc-mG-GNn"/>
+                    <connections>
+                        <outlet property="faceView" destination="2hH-cQ-Q09" id="Mwo-hp-6lj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5y-9j-HPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1444" y="-881.10944527736137"/>
+        </scene>
+    </scenes>
+</document>
