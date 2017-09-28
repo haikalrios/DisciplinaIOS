@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     }
     
     func moverQuadrado(_ sender: UITapGestureRecognizer){
-        
+        //let destino = sender.location(in: self.view)
     }
 
 }

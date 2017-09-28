@@ -6,7 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ExemploAula6/ViewController.swift"
@@ -22,7 +22,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ExemploAula6/ViewController.swift"
@@ -35,14 +35,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "ExemploAula6.ViewController.animarQuadrado (__ObjC.UITapGestureRecognizer) -&gt; ()"
                   moduleName = "ExemploAula6"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/haikalrios/Documents/projects/aula6/ExemploAula6/ExemploAula6/ViewController.swift"
-                  timestampString = "527124221.584986"
+                  timestampString = "527125785.884402"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "23"
@@ -50,14 +50,14 @@
                   offsetFromSymbolStart = "19">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "ExemploAula6.ViewController.(animarQuadrado (__ObjC.UITapGestureRecognizer) -&gt; ()).(closure #1)"
                   moduleName = "ExemploAula6"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/haikalrios/Documents/projects/aula6/ExemploAula6/ExemploAula6/ViewController.swift"
-                  timestampString = "527124221.589834"
+                  timestampString = "527125785.889692"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "23"
