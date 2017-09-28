@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CFF9E841F4F8B0300A5B20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF9E831F4F8B0300A5B20C /* AppDelegate.swift */; };
+		7CFF9E861F4F8B0300A5B20C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF9E851F4F8B0300A5B20C /* ViewController.swift */; };
+		7CFF9E891F4F8B0300A5B20C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CFF9E871F4F8B0300A5B20C /* Main.storyboard */; };
+		7CFF9E8C1F4F8B0300A5B20C /* BlueBirdPersist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF9E8A1F4F8B0300A5B20C /* BlueBirdPersist.xcdatamodeld */; };
+		7CFF9E8E1F4F8B0300A5B20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CFF9E8D1F4F8B0300A5B20C /* Assets.xcassets */; };
+		7CFF9E911F4F8B0300A5B20C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CFF9E8F1F4F8B0300A5B20C /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7CFF9E801F4F8B0300A5B20C /* BlueBirdPersist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueBirdPersist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CFF9E831F4F8B0300A5B20C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CFF9E851F4F8B0300A5B20C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7CFF9E881F4F8B0300A5B20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CFF9E8B1F4F8B0300A5B20C /* BlueBirdPersist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlueBirdPersist.xcdatamodel; sourceTree = "<group>"; };
+		7CFF9E8D1F4F8B0300A5B20C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CFF9E901F4F8B0300A5B20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CFF9E921F4F8B0300A5B20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CFF9E7D1F4F8B0300A5B20C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CFF9E771F4F8B0300A5B20C = {
+			isa = PBXGroup;
+			children = (
+				7CFF9E821F4F8B0300A5B20C /* BlueBirdPersist */,
+				7CFF9E811F4F8B0300A5B20C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CFF9E811F4F8B0300A5B20C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CFF9E801F4F8B0300A5B20C /* BlueBirdPersist.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CFF9E821F4F8B0300A5B20C /* BlueBirdPersist */ = {
+			isa = PBXGroup;
+			children = (
+				7CFF9E831F4F8B0300A5B20C /* AppDelegate.swift */,
+				7CFF9E851F4F8B0300A5B20C /* ViewController.swift */,
+				7CFF9E871F4F8B0300A5B20C /* Main.storyboard */,
+				7CFF9E8D1F4F8B0300A5B20C /* Assets.xcassets */,
+				7CFF9E8F1F4F8B0300A5B20C /* LaunchScreen.storyboard */,
+				7CFF9E921F4F8B0300A5B20C /* Info.plist */,
+				7CFF9E8A1F4F8B0300A5B20C /* BlueBirdPersist.xcdatamodeld */,
+			);
+			path = BlueBirdPersist;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CFF9E7F1F4F8B0300A5B20C /* BlueBirdPersist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CFF9E951F4F8B0300A5B20C /* Build configuration list for PBXNativeTarget "BlueBirdPersist" */;
+			buildPhases = (
+				7CFF9E7C1F4F8B0300A5B20C /* Sources */,
+				7CFF9E7D1F4F8B0300A5B20C /* Frameworks */,
+				7CFF9E7E1F4F8B0300A5B20C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueBirdPersist;
+			productName = BlueBirdPersist;
+			productReference = 7CFF9E801F4F8B0300A5B20C /* BlueBirdPersist.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CFF9E781F4F8B0300A5B20C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Haikal Rios";
+				TargetAttributes = {
+					7CFF9E7F1F4F8B0300A5B20C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 44H7KF5CV6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7CFF9E7B1F4F8B0300A5B20C /* Build configuration list for PBXProject "BlueBirdPersist" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CFF9E771F4F8B0300A5B20C;
+			productRefGroup = 7CFF9E811F4F8B0300A5B20C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CFF9E7F1F4F8B0300A5B20C /* BlueBirdPersist */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CFF9E7E1F4F8B0300A5B20C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CFF9E911F4F8B0300A5B20C /* LaunchScreen.storyboard in Resources */,
+				7CFF9E8E1F4F8B0300A5B20C /* Assets.xcassets in Resources */,
+				7CFF9E891F4F8B0300A5B20C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CFF9E7C1F4F8B0300A5B20C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CFF9E861F4F8B0300A5B20C /* ViewController.swift in Sources */,
+				7CFF9E841F4F8B0300A5B20C /* AppDelegate.swift in Sources */,
+				7CFF9E8C1F4F8B0300A5B20C /* BlueBirdPersist.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7CFF9E871F4F8B0300A5B20C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CFF9E881F4F8B0300A5B20C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CFF9E8F1F4F8B0300A5B20C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CFF9E901F4F8B0300A5B20C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CFF9E931F4F8B0300A5B20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7CFF9E941F4F8B0300A5B20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CFF9E961F4F8B0300A5B20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44H7KF5CV6;
+				INFOPLIST_FILE = BlueBirdPersist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.haikal.BlueBirdPersist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7CFF9E971F4F8B0300A5B20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44H7KF5CV6;
+				INFOPLIST_FILE = BlueBirdPersist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.haikal.BlueBirdPersist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CFF9E7B1F4F8B0300A5B20C /* Build configuration list for PBXProject "BlueBirdPersist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CFF9E931F4F8B0300A5B20C /* Debug */,
+				7CFF9E941F4F8B0300A5B20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CFF9E951F4F8B0300A5B20C /* Build configuration list for PBXNativeTarget "BlueBirdPersist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CFF9E961F4F8B0300A5B20C /* Debug */,
+				7CFF9E971F4F8B0300A5B20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7CFF9E8A1F4F8B0300A5B20C /* BlueBirdPersist.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7CFF9E8B1F4F8B0300A5B20C /* BlueBirdPersist.xcdatamodel */,
+			);
+			currentVersion = 7CFF9E8B1F4F8B0300A5B20C /* BlueBirdPersist.xcdatamodel */;
+			path = BlueBirdPersist.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7CFF9E781F4F8B0300A5B20C /* Project object */;
+}

@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C0B55E11F4F90B9002D1469 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0B55E01F4F90B9002D1469 /* Tweet.swift */; };
+		7C0B55E41F4F910F002D1469 /* TwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0B55E31F4F910F002D1469 /* TwitterUser.swift */; };
+		7C0B55E71F4F945A002D1469 /* TwitterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0B55E61F4F945A002D1469 /* TwitterTableViewController.swift */; };
+		7C0B55E91F4F9DF0002D1469 /* PersistentSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0B55E81F4F9DF0002D1469 /* PersistentSearch.swift */; };
+		7C1003531F3D2AC8000ADAAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1003521F3D2AC8000ADAAC /* AppDelegate.swift */; };
+		7C1003581F3D2AC8000ADAAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C1003561F3D2AC8000ADAAC /* Main.storyboard */; };
+		7C10035B1F3D2AC8000ADAAC /* BlueBird.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C1003591F3D2AC8000ADAAC /* BlueBird.xcdatamodeld */; };
+		7C10035D1F3D2AC8000ADAAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C10035C1F3D2AC8000ADAAC /* Assets.xcassets */; };
+		7C1003601F3D2AC8000ADAAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C10035E1F3D2AC8000ADAAC /* LaunchScreen.storyboard */; };
+		7C1003691F3D2C1F000ADAAC /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1003681F3D2C1F000ADAAC /* SearchTableViewController.swift */; };
+		7C10037B1F3D3599000ADAAC /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10037A1F3D3599000ADAAC /* TweetTableViewCell.swift */; };
+		7C108C611F43F70400803472 /* MentionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C108C601F43F70400803472 /* MentionTableViewCell.swift */; };
+		7C108C631F43F7CA00803472 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C108C621F43F7CA00803472 /* ImageTableViewCell.swift */; };
+		7C89127F1F412E1F001EE61D /* DetailTweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C89127E1F412E1F001EE61D /* DetailTweetTableViewController.swift */; };
+		7CEE26781F40A6B30061667F /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEE26641F40A4120061667F /* Twitter.framework */; };
+		7CEE26791F40A6B30061667F /* Twitter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEE26641F40A4120061667F /* Twitter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CEE26631F40A4120061667F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CEE265F1F40A4120061667F /* Twitter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA1365711E4F8BE000F66D3D;
+			remoteInfo = Twitter;
+		};
+		7CEE267A1F40A6B30061667F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CEE265F1F40A4120061667F /* Twitter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DA1365701E4F8BE000F66D3D;
+			remoteInfo = Twitter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7CEE267C1F40A6B30061667F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7CEE26791F40A6B30061667F /* Twitter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7C0B55E01F4F90B9002D1469 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tweet.swift; path = ../Tweet.swift; sourceTree = "<group>"; };
+		7C0B55E31F4F910F002D1469 /* TwitterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterUser.swift; sourceTree = "<group>"; };
+		7C0B55E61F4F945A002D1469 /* TwitterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterTableViewController.swift; sourceTree = "<group>"; };
+		7C0B55E81F4F9DF0002D1469 /* PersistentSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentSearch.swift; sourceTree = "<group>"; };
+		7C10034F1F3D2AC8000ADAAC /* BlueBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C1003521F3D2AC8000ADAAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C1003571F3D2AC8000ADAAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C10035A1F3D2AC8000ADAAC /* BlueBird.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlueBird.xcdatamodel; sourceTree = "<group>"; };
+		7C10035C1F3D2AC8000ADAAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C10035F1F3D2AC8000ADAAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C1003611F3D2AC8000ADAAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C1003681F3D2C1F000ADAAC /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		7C10037A1F3D3599000ADAAC /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		7C108C601F43F70400803472 /* MentionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionTableViewCell.swift; sourceTree = "<group>"; };
+		7C108C621F43F7CA00803472 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		7C89127E1F412E1F001EE61D /* DetailTweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTweetTableViewController.swift; sourceTree = "<group>"; };
+		7CEE265F1F40A4120061667F /* Twitter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Twitter.xcodeproj; path = ../Twitter/Twitter.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C10034C1F3D2AC8000ADAAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CEE26781F40A6B30061667F /* Twitter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C0B55E21F4F90C9002D1469 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				7C0B55E01F4F90B9002D1469 /* Tweet.swift */,
+				7C0B55E31F4F910F002D1469 /* TwitterUser.swift */,
+			);
+			name = entity;
+			sourceTree = "<group>";
+		};
+		7C0B55E51F4F9135002D1469 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				7C108C601F43F70400803472 /* MentionTableViewCell.swift */,
+				7C108C621F43F7CA00803472 /* ImageTableViewCell.swift */,
+				7C10037A1F3D3599000ADAAC /* TweetTableViewCell.swift */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+		7C1003461F3D2AC8000ADAAC = {
+			isa = PBXGroup;
+			children = (
+				7C1003511F3D2AC8000ADAAC /* BlueBird */,
+				7C1003501F3D2AC8000ADAAC /* Products */,
+				7CEE265E1F40A4110061667F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7C1003501F3D2AC8000ADAAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C10034F1F3D2AC8000ADAAC /* BlueBird.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C1003511F3D2AC8000ADAAC /* BlueBird */ = {
+			isa = PBXGroup;
+			children = (
+				7C0B55E51F4F9135002D1469 /* cells */,
+				7C0B55E21F4F90C9002D1469 /* entity */,
+				7CA2A6CD1F44D47800EC47EA /* Controllers */,
+				7C1003671F3D2B3F000ADAAC /* Supporting Files */,
+				7C1003561F3D2AC8000ADAAC /* Main.storyboard */,
+				7C1003611F3D2AC8000ADAAC /* Info.plist */,
+			);
+			path = BlueBird;
+			sourceTree = "<group>";
+		};
+		7C1003671F3D2B3F000ADAAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C1003521F3D2AC8000ADAAC /* AppDelegate.swift */,
+				7C10035C1F3D2AC8000ADAAC /* Assets.xcassets */,
+				7C10035E1F3D2AC8000ADAAC /* LaunchScreen.storyboard */,
+				7C1003591F3D2AC8000ADAAC /* BlueBird.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CA2A6CD1F44D47800EC47EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C89127E1F412E1F001EE61D /* DetailTweetTableViewController.swift */,
+				7C1003681F3D2C1F000ADAAC /* SearchTableViewController.swift */,
+				7C0B55E81F4F9DF0002D1469 /* PersistentSearch.swift */,
+				7C0B55E61F4F945A002D1469 /* TwitterTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7CEE265E1F40A4110061667F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CEE265F1F40A4120061667F /* Twitter.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CEE26601F40A4120061667F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CEE26641F40A4120061667F /* Twitter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C10034E1F3D2AC8000ADAAC /* BlueBird */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C1003641F3D2AC8000ADAAC /* Build configuration list for PBXNativeTarget "BlueBird" */;
+			buildPhases = (
+				7C10034B1F3D2AC8000ADAAC /* Sources */,
+				7C10034C1F3D2AC8000ADAAC /* Frameworks */,
+				7C10034D1F3D2AC8000ADAAC /* Resources */,
+				7CEE267C1F40A6B30061667F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CEE267B1F40A6B30061667F /* PBXTargetDependency */,
+			);
+			name = BlueBird;
+			productName = BlueBird;
+			productReference = 7C10034F1F3D2AC8000ADAAC /* BlueBird.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C1003471F3D2AC8000ADAAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Haikal Rios";
+				TargetAttributes = {
+					7C10034E1F3D2AC8000ADAAC = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 44H7KF5CV6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7C10034A1F3D2AC8000ADAAC /* Build configuration list for PBXProject "BlueBird" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C1003461F3D2AC8000ADAAC;
+			productRefGroup = 7C1003501F3D2AC8000ADAAC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7CEE26601F40A4120061667F /* Products */;
+					ProjectRef = 7CEE265F1F40A4120061667F /* Twitter.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7C10034E1F3D2AC8000ADAAC /* BlueBird */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7CEE26641F40A4120061667F /* Twitter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Twitter.framework;
+			remoteRef = 7CEE26631F40A4120061667F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C10034D1F3D2AC8000ADAAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1003601F3D2AC8000ADAAC /* LaunchScreen.storyboard in Resources */,
+				7C10035D1F3D2AC8000ADAAC /* Assets.xcassets in Resources */,
+				7C1003581F3D2AC8000ADAAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C10034B1F3D2AC8000ADAAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C10035B1F3D2AC8000ADAAC /* BlueBird.xcdatamodeld in Sources */,
+				7C108C611F43F70400803472 /* MentionTableViewCell.swift in Sources */,
+				7C108C631F43F7CA00803472 /* ImageTableViewCell.swift in Sources */,
+				7C1003691F3D2C1F000ADAAC /* SearchTableViewController.swift in Sources */,
+				7C1003531F3D2AC8000ADAAC /* AppDelegate.swift in Sources */,
+				7C89127F1F412E1F001EE61D /* DetailTweetTableViewController.swift in Sources */,
+				7C0B55E71F4F945A002D1469 /* TwitterTableViewController.swift in Sources */,
+				7C10037B1F3D3599000ADAAC /* TweetTableViewCell.swift in Sources */,
+				7C0B55E11F4F90B9002D1469 /* Tweet.swift in Sources */,
+				7C0B55E91F4F9DF0002D1469 /* PersistentSearch.swift in Sources */,
+				7C0B55E41F4F910F002D1469 /* TwitterUser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CEE267B1F40A6B30061667F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Twitter;
+			targetProxy = 7CEE267A1F40A6B30061667F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7C1003561F3D2AC8000ADAAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C1003571F3D2AC8000ADAAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7C10035E1F3D2AC8000ADAAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C10035F1F3D2AC8000ADAAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C1003621F3D2AC8000ADAAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7C1003631F3D2AC8000ADAAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C1003651F3D2AC8000ADAAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44H7KF5CV6;
+				INFOPLIST_FILE = BlueBird/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.haikal.BlueBird;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7C1003661F3D2AC8000ADAAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44H7KF5CV6;
+				INFOPLIST_FILE = BlueBird/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.haikal.BlueBird;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C10034A1F3D2AC8000ADAAC /* Build configuration list for PBXProject "BlueBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C1003621F3D2AC8000ADAAC /* Debug */,
+				7C1003631F3D2AC8000ADAAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C1003641F3D2AC8000ADAAC /* Build configuration list for PBXNativeTarget "BlueBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C1003651F3D2AC8000ADAAC /* Debug */,
+				7C1003661F3D2AC8000ADAAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7C1003591F3D2AC8000ADAAC /* BlueBird.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7C10035A1F3D2AC8000ADAAC /* BlueBird.xcdatamodel */,
+			);
+			currentVersion = 7C10035A1F3D2AC8000ADAAC /* BlueBird.xcdatamodel */;
+			path = BlueBird.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7C1003471F3D2AC8000ADAAC /* Project object */;
+}
