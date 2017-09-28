@@ -15,6 +15,8 @@
 		0BA436181F747E7B00B82F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA436161F747E7B00B82F9A /* LaunchScreen.storyboard */; };
 		0BA436231F7485AF00B82F9A /* UserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA436221F7485AF00B82F9A /* UserListTableViewController.swift */; };
 		0BA436261F74883C00B82F9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA436251F74883C00B82F9A /* Foundation.framework */; };
+		7CDC99181F7D89B500128AD3 /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC99171F7D89B500128AD3 /* UserDAO.swift */; };
+		7CDC991A1F7D970E00128AD3 /* UserTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC99191F7D970E00128AD3 /* UserTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0BA436191F747E7B00B82F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BA436221F7485AF00B82F9A /* UserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewController.swift; sourceTree = "<group>"; };
 		0BA436251F74883C00B82F9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7CDC99171F7D89B500128AD3 /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
+		7CDC99191F7D970E00128AD3 /* UserTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				0BA4360C1F747E7900B82F9A /* ViewController.swift */,
 				0BA4360E1F747E7A00B82F9A /* Main.storyboard */,
 				0BA436111F747E7B00B82F9A /* IOSJsonCosumer.xcdatamodeld */,
+				7CDC99171F7D89B500128AD3 /* UserDAO.swift */,
+				7CDC99191F7D970E00128AD3 /* UserTO.swift */,
 			);
 			path = IOSJsonCosumer;
 			sourceTree = "<group>";
@@ -165,7 +171,9 @@
 				0BA436131F747E7B00B82F9A /* IOSJsonCosumer.xcdatamodeld in Sources */,
 				0BA4360D1F747E7900B82F9A /* ViewController.swift in Sources */,
 				0BA436231F7485AF00B82F9A /* UserListTableViewController.swift in Sources */,
+				7CDC99181F7D89B500128AD3 /* UserDAO.swift in Sources */,
 				0BA4360B1F747E7900B82F9A /* AppDelegate.swift in Sources */,
+				7CDC991A1F7D970E00128AD3 /* UserTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

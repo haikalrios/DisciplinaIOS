@@ -7,39 +7,61 @@
 //
 
 import UIKit
+import SystemConfiguration
+import CoreData
 
-struct User: Codable {
-    var id: Int
-    var name: String
-    var username: String
-   
-}
+
 
 class UserListTableViewController: UITableViewController, URLSessionDataDelegate {
     
+    @IBOutlet weak var tipoDado: UILabel!
     var dataReceived =  Data()
-    var users = [User]()
+    var usersTO = [UserTO]()
+    var userDAO: UserDAO = UserDAO()
     
     
     public func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data){
+        //Appenda data a medida que vai sendo recuperado
         dataReceived.append(data)
     }
     
    
     func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
+       //finalizado o receved parseia o JSON
         let decoder = JSONDecoder()
         do {
-            users = try decoder.decode([User].self, from: dataReceived)
+            usersTO = try decoder.decode([UserTO].self, from: dataReceived)
+            userDAO.salveUsers(usersTO: usersTO)
             DispatchQueue.main.async { [unowned self] in
                 self.tableView.reloadData()
+                self.tipoDado.text = "On-Line, sincronizado"
             }
         }catch  {
-            debugPrint(error)
+            usersTO = userDAO.findAll()
+            self.tableView.reloadData()
+            tipoDado.text = "erro no request, dados do BD Local"
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Antes de fazer a requisição é necessário saber se existe conexão com a internet, caso não haja é necessário recuperar os dados do Banco de Dados CoreData
+        print(currentReachabilityStatus)
+        if(currentReachabilityStatus != .notReachable){//true conectado
+            
+            requestUsers()
+        }else{
+            tipoDado.text = "off-line, dados do BD Local"
+            usersTO = userDAO.findAll()
+            self.tableView.reloadData()
+            
+        }
+
+    }
+    
+   
+    
+    private func requestUsers(){
         let config = URLSessionConfiguration.default
         config.allowsCellularAccess = true
         config.networkServiceType = .default
@@ -63,84 +85,84 @@ class UserListTableViewController: UITableViewController, URLSessionDataDelegate
             let dataTask = session.dataTask(with: request)
             dataTask.resume()
         }
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
-    // MARK: - Table view data source
+
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return users.count
+        return usersTO.count
     }
 
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "user", for: indexPath)
-        let user = users[indexPath.row]
+        let user = usersTO[indexPath.row]
         cell.textLabel?.text = user.name
         cell.detailTextLabel?.text = user.username
     
         return cell
     }
   
+   
+
+}
+
+protocol Utilities{
     
+}
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+extension NSObject:Utilities{
+    
+    enum ReachabilityStatus {
+        case notReachable
+        case reachableViaWWAN
+        case reachableViaWiFi
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+
+    var currentReachabilityStatus: ReachabilityStatus {
+        var zeroAddress = sockaddr_in()
+        zeroAddress.sin_len = UInt8(MemoryLayout<sockaddr_in>.size)
+        zeroAddress.sin_family = sa_family_t(AF_INET)
+        
+        guard let defaultRouteReachability = withUnsafePointer(to: &zeroAddress, {
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {
+                SCNetworkReachabilityCreateWithAddress(nil, $0)
+            }
+        }) else {
+            return .notReachable
+        }
+        
+        var flags: SCNetworkReachabilityFlags = []
+        if !SCNetworkReachabilityGetFlags(defaultRouteReachability, &flags) {
+            return .notReachable
+        }
+        
+        if flags.contains(.reachable) == false {
+            return .notReachable
+        }
+        else if flags.contains(.isWWAN) == true {
+            return .reachableViaWWAN
+        }
+        else if flags.contains(.connectionRequired) == false {
+            return .reachableViaWiFi
+        }
+        else if (flags.contains(.connectionOnDemand) == true || flags.contains(.connectionOnTraffic) == true) && flags.contains(.interventionRequired) == false {
+            return .reachableViaWiFi
+        }
+        else {
+            return .notReachable
+        }
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }
 
