@@ -8,17 +8,32 @@
 
 import UIKit
 
-class UserTO: Codable {
-    var id: Int16
+struct UserTO: Codable {
+    var id: Int32
     var name: String
     var username: String
+    var email: String
+    var phone: String
+    var website: String
+    var address: AddressTO
+    var company: CompanyTO
     
-    init(id: Int16,
+    init(id: Int32,
          name: String,
-         username: String) {
+         username: String,
+         email: String,
+         phone: String,
+         website: String,
+         address: AddressTO,
+         company: CompanyTO) {
         self.id = id
         self.name = name
         self.username = username
+        self.email = email
+        self.phone = phone
+        self.website = website
+        self.address = address
+        self.company = company
         
     }
 }

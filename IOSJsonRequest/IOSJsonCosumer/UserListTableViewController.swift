@@ -33,20 +33,23 @@ class UserListTableViewController: UITableViewController, URLSessionDataDelegate
             usersTO = try decoder.decode([UserTO].self, from: dataReceived)
             userDAO.salveUsers(usersTO: usersTO)
             DispatchQueue.main.async { [unowned self] in
-                self.tableView.reloadData()
                 self.tipoDado.text = "On-Line, sincronizado"
+                self.tableView.reloadData()
+                
             }
-        }catch  {
+        }catch 	{
+            print(error)
+            tipoDado.text = "erro no request, dados do BD Local"
             usersTO = userDAO.findAll()
             self.tableView.reloadData()
-            tipoDado.text = "erro no request, dados do BD Local"
+            
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //Antes de fazer a requisição é necessário saber se existe conexão com a internet, caso não haja é necessário recuperar os dados do Banco de Dados CoreData
-        print(currentReachabilityStatus)
+       // print(currentReachabilityStatus)
         if(currentReachabilityStatus != .notReachable){//true conectado
             
             requestUsers()
