@@ -35,8 +35,8 @@ class ViewController: UIViewController {
         
         let annotation = MKPointAnnotation()
         annotation.coordinate = coordinate
-        annotation.title = "haikal"
-        annotation.subtitle = "oi"
+        annotation.title = "Aqui"
+        annotation.subtitle = ":)"
         
         mapView.addAnnotation(annotation)
     }

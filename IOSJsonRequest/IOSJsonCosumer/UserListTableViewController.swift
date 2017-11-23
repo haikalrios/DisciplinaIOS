@@ -46,6 +46,11 @@ class UserListTableViewController: UITableViewController, URLSessionDataDelegate
         }
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let user = usersTO[indexPath.row];
+        performSegue(withIdentifier: "userDetail", sender: user);
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Antes de fazer a requisição é necessário saber se existe conexão com a internet, caso não haja é necessário recuperar os dados do Banco de Dados CoreData
@@ -60,6 +65,16 @@ class UserListTableViewController: UITableViewController, URLSessionDataDelegate
             
         }
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "userDetail"{
+            if let view = segue.destination as? ViewControllerDetailUser{
+                if let userTO = sender as? UserTO{
+                    view.user = userTO
+                }
+            }
+        }
     }
     
    
